@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/activity_main_button_toast"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="24dp"
+        android:text="Fire Toast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/activity_main_button_snackbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Fire Snackbar"
+        app:layout_constraintEnd_toEndOf="@+id/activity_main_button_toast"
+        app:layout_constraintStart_toStartOf="@+id/activity_main_button_toast"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_button_toast" />
+
+    <Button
+        android:id="@+id/activity_main_button_dialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Fire Dialog"
+        app:layout_constraintEnd_toEndOf="@+id/activity_main_button_snackbar"
+        app:layout_constraintStart_toStartOf="@+id/activity_main_button_snackbar"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_button_snackbar" />
+
+    <Button
+        android:id="@+id/activity_main_button_vibrate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Vibrate"
+        app:layout_constraintEnd_toEndOf="@+id/activity_main_button_dialog"
+        app:layout_constraintStart_toStartOf="@+id/activity_main_button_dialog"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_button_dialog" />
+
+    <Button
+        android:id="@+id/activity_main_button_notification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Fire Notification"
+        app:layout_constraintEnd_toEndOf="@+id/activity_main_button_vibrate"
+        app:layout_constraintStart_toStartOf="@+id/activity_main_button_vibrate"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_button_vibrate" />
+</androidx.constraintlayout.widget.ConstraintLayout>
